@@ -26,7 +26,7 @@ export const crearVenta = async (req: Request, res: Response) => {
 
     const venta = {
         usuario: usuario.usuarios.usuarios[0],
-        producto: producto.productos.productos[0]
+        producto: producto.productos.productos[0],
         cantidad,
         precio: {
             unidad: producto.productos.productos[0]?.precio,

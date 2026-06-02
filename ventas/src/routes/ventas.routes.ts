@@ -1,4 +1,4 @@
-import {router} from 'express';
+import {Router} from 'express';
 import {crearVenta, getAll} from '../controllers/ventas.controller.js';
 
 const router = Router();
