@@ -1,0 +1,1 @@
+export { default as ProductosRoutes } from './productos.routes.ts';
