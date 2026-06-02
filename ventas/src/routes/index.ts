@@ -1,0 +1,1 @@
+export { default as VentasRoutes } from './ventas.routes.js';
