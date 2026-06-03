@@ -21,7 +21,10 @@ app.post("/api/v1", async (req: Request, res: Response) => {
     }
 
     try {
-        const {data} = await axios.post("http://localhost:3001/events", {event, requestData});
+        const {data} = await axios.post("http://localhost:3001/events", {
+            event: event.toUpperCase(),
+            data: requestData
+        });
         return res.status(200).jason({message: "Success", data,})
     } catch (error){
         return res.status(500).json({message:"Error", error})
